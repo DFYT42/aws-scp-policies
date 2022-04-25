@@ -44,7 +44,7 @@
         "cloudtrail:DeleteEventDataStore",
         "cloudtrail:DeleteTrail"
        ],
-      "Resource": ""
+      "Resource": "*"
       }
    ]
 }
