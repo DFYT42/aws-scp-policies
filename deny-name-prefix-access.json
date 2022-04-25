@@ -1,0 +1,60 @@
+{
+  "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Statement1",
+        "Effect": "Deny",
+        "Action": [
+          "iam:CreateAccountAlias",
+          "iam:CreateGroup",
+          "iam:CreateRole",
+          "iam:CreateUser",
+          "iam:CreatePolicy",
+          "iam:DeleteGroup",
+          "iam:DeleteRole",
+          "iam:DeleteUser",
+          "iam:DeletePolicy",
+          "iam:PutGroupPolicy",
+          "iam:PutRolePolicy",
+          "iam:PutUserPolicy",
+          "iam:PutUserPermissionsBoundary",
+          "iam:PutRolePermissionsBoundary",
+          "iam:UntagPolicy",
+          "iam:CreateSAMLProvider",
+          "iam:CreateOpenIDConnectProvider",
+          "iam:AddClientIDToOpenIDConnectProvider",
+          "iam:DeleteOpenIDConnectProvider",
+          "iam:DeleteSAMLProvider",
+          "iam:UntagOpenIDConnectProvider",
+          "iam:UntagSAMLProvider",
+          "iam:UpdateOpenIDConnectProviderThumbprint",
+          "iam:UpdateSAMLProvider",
+          "iam:SetSecurityTokenServicePreferences",
+          "iam:AddUserToGroup",
+          "iam:RemoveUserFromGroup",
+          "iam:UpdateUser",
+          "iam:UntagUser",
+          "servicequotas:AssociateServiceQuotaTemplate",
+          "servicequotas:DeleteServiceQuotaIncreaseRequestFromTemplate",
+          "servicequotas:DisassociateServiceQuotaTemplate",
+          "servicequotas:PutServiceQuotaIncreaseRequestIntoTemplate",
+          "servicequotas:RequestServiceQuotaIncrease",
+          "servicequotas:TagResource",
+          "servicequotas:UntagResource",
+          "iam:CreateAccessKey",
+          "iam:DeleteAccessKey",
+          "iam:UpdateAccessKey"
+        ],
+      "Resource": [
+        ""
+       ],
+      "Condition": {
+        "StringLike": {
+          "aws:username": [
+            "FOR."
+          ]
+        }
+      }
+    }
+  ]
+}
