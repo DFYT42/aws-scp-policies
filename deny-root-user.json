@@ -5,10 +5,10 @@
       "Sid": "DenyRootUser",
       "Effect": "Deny",
       "Action": [
-        ""
+        "*"
       ],
   "Resource": [
-    ""
+    "*"
   ],
   "Condition": {
     "StringLike": {
